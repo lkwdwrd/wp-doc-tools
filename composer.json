@@ -1,0 +1,27 @@
+{
+	"name": "wp-documentor-tools",
+	"description": "Tools for working with the WP_Parser post types and data.",
+	"version": "0.0.1",
+	"type": "wordpress-plugin",
+	"keywords": [],
+	"homepage": "http://wordpress.org/plugins",
+	"license": "GPLv2.0+",
+	"authors": [
+		{
+			"name": "Luke Woodward",
+			"email": "woodward.lucas@gmail.com",
+		"homepage": "https://lkwdwrd.com",
+			"role": "Developer"
+		}
+	],
+    "minimum-stability": "dev",
+	"require": {
+		"php": ">=5.4"
+	},
+    "require-dev": {
+	    "antecedent/patchwork": "1.2.*",
+        "phpunit/phpunit"     : "*@stable",
+	    "brianium/paratest"   : "dev-master",
+        "10up/wp_mock"        : "dev-master"
+    }
+}
