@@ -457,14 +457,7 @@ abstract class Reference implements \JsonSerializable {
 		if ( empty( $return ) ) {
 			return '';
 		} else {
-			$return      = array_shift( $return );
-			$description = empty( $return['content'] ) ? '' : esc_html( $return['content'] );
-			$type        = empty( $return['types'] ) ? '' : esc_html( implode( '|', $return['types'] ) );
-
-			return array(
-				'type' => $type,
-				'description' => $description,
-			);
+			return array_shift( $return );
 		}
 	}
 
