@@ -85,7 +85,7 @@ class Cls extends Reference\Reference {
 		) );
 
 		if ( $items->have_posts() ) {
-			$methods = array_map( '\\WP_Doc\\Helpers\\get_reference_object', $items->posts );
+			$methods = array_map( '\\WP_Doc\\Tools\\Helpers\\_get_reference_object', $items->posts );
 		} else {
 			$methods = array();
 		}
