@@ -536,7 +536,7 @@ abstract class Reference implements \JsonSerializable {
 					} else {
 						$params[ $tag['variable'] ]['required'] = 'Required';
 					}
-					$params[ $tag['variable'] ]['content'] = esc_html( $params[ $tag['variable'] ]['content'] );
+					$params[ $tag['variable'] ]['content'] = $params[ $tag['variable'] ]['content'];
 					$params[ $tag['variable'] ]['content'] = self::make_doclink_clickable( $params[ $tag['variable'] ]['content'] );
 					$params[ $tag['variable'] ]['content'] = $this->_parse_type_params( $params[ $tag['variable'] ]['content'] );
 				}
